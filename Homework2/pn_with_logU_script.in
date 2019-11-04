@@ -1,0 +1,8 @@
+set save prefix "pn_with_logU"
+blackbody 150000 K
+radius 17
+hden 4
+ionization parameter 1
+print last
+save last overview, file="overview"
+save last continuum, file="cont"

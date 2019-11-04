@@ -1,0 +1,25 @@
+set save prefix "pn_vary_UNHn"
+blackbody 150000 K
+radius 17
+hden 4 vary
+grid 2 6 2
+ionization parameter -2 vary
+grid -2 1 0.5
+stop column density 21 vary
+grid 18 24 0.5
+stop temperature off
+print last
+save last overview, file=".overview"
+save last continuum, file=".cont"
+save last grid ".grd" 
+save last species column densities, file=".columns"
+"H[1:4]"
+"He[1:2]"
+"He+[1:4]"
+"O[1:5]"
+"O+[1:5]"
+"O+2[1:5]"
+"O+3[1:2]"
+"O+4[1:4]"
+"O+5[1]"
+end
