@@ -1,0 +1,11 @@
+set save prefix "kirk_10_"
+AGN kirk
+ionization parameter = -1.0
+HDEN = 9.0
+stop column density 23.5
+metals 10.0
+element scale factor helium 1.66
+element scale factor nitrogen 100.0
+print last
+COVERING FACTOR 0.1
+save last line, sort intensity, column, file="line"
